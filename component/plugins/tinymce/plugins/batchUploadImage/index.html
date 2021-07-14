@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="utf-8">
+    <title>批量上传图片</title>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+<div class="header">
+    <div class="header-start">
+        <button id="choose" class="button primary">选择图片</button>
+        <span class="tip">支持上传JPG、PNG、GIF格式，一次最多上传10张图片</span>
+    </div>
+    <div class="header-end">
+        <button id="upload" class="button">批量上传</button>
+    </div>
+</div>
+<div id="main" class="main">
+    <ul id="list" class="list"></ul>
+</div>
+<div class="footer">
+    <div class="footer-start"></div>
+    <div class="footer-end">
+        <button id="cancel" class="button">取消</button>
+        <button id="empty" class="button">清空列表</button>
+        <button id="insert" class="button primary">全部插入</button>
+    </div>
+</div>
+<script src="./main.js"></script>
+</body>
+</html>

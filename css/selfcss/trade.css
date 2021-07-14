@@ -1,0 +1,16 @@
+.selfindex {
+  width: 3.5%;
+}
+.selfdate {
+  width: 30%;
+  display: flex;
+}
+.selfdate div {
+  flex: 1;
+  display: inline-block;
+  float: left;
+}
+.selfdate div input {
+  display: inline-block;
+  width: 60%;
+}

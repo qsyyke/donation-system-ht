@@ -1,0 +1,19 @@
+.my-editor {
+    padding-top: 0px;
+    padding-left: 15px;
+    /* margin-top: 30px;
+    margin-bottom: 30px; */
+    width: 90%;
+
+    /* min-height: 300px; */
+    margin: 30px auto;
+}
+.insert {
+    position: relative;
+    top: 13px;
+    margin-bottom: 15px;
+}
+.jquery-notebook {
+    position: relative;
+    top: 0px;
+}

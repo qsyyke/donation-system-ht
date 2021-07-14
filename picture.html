@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>幸得有你 山河无恙 图片管理</title>
+    <script src="component/js/jquery-3.5.1.min.js"></script>
+    <script src="./js/selfjs/distpicker.js"></script>
+    <link rel="stylesheet" href="./component/style/components.css">
+    <script src="./component/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/plugins.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="./css/selfcss/pirture.css">
+    <script src="js/selfjs/verifycookie.js"></script>
+    <script src="./js/selfjs/prcture.js"></script>
+    <script src="./js/selfjs/deletecheck.js"></script>
+
+</head>
+
+<body>
+    <div id="body">
+        <ol class="breadcrumb">
+            <li class="active"><a href="#">系统</a></li>
+            <li>用户列表</li>
+        </ol>
+        <div class="barboxs">
+            <button class="btn btn-danger pull-left ml10 pagedelete" data-toggle="tooltip" title="" data-placement="right" data-original-title="删除"><i class="fa fa-trash-o"></i></button> 
+        </div>
+    
+        <div class="tablebox">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th class="text-center" width="50"><input class="checkall" type="checkbox" id="check5-all" name="check5-all"></th>
+                        <th class="text-center">ID</th>
+                        <th>图片名称</th>
+                        <th>连接</th>
+                        <th>唯一标识</th>
+                        <th>发布日期</th>
+                        <th>头像</th>
+                        <th class="text-center" width="85"><i class="fa fa-bolt"></i> 操作</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+        <div class="fy">
+            <ul class="pagination"></ul>
+        </div>
+    </div>
+
+
+
+    <div class="selfdialog" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">添加用户</h4>
+            </div>
+            <div class="modal-body">
+
+                <div class="form-group">
+                    <label for="exampleInputUser">图片名称</label>
+                    <input type="text" class="form-control dialog_username" id="exampleInputUse" placeholder="请输入图片标题，不含后缀名.png .jpg...">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputAddress">图片地址</label>
+                    <input type="text" class="form-control dialog_address" id="exampleInputAddress" placeholder="请输入图片地址">
+                </div>
+                <div style="display: none;" class="form-group">
+                    <input type="text" class="form-control identify" id="exampleInputAddress" placeholder="请输入">
+                </div>
+
+
+                
+               
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-danger dia_cancel" data-dismiss="modal">取消</button>
+                <button class="btn btn-success self_save">创建</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+  <!-- 000 -->
+    <script>
+        $('.dropdown-toggle').dropdown();
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+        
+    </script>
+</body>
+
+</html>

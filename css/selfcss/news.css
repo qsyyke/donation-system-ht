@@ -1,0 +1,53 @@
+.selfdate {
+    width: 30%;
+    display: flex;
+  }
+  .selfdate div {
+    flex: 1;
+    display: inline-block;
+    float: left;
+  }
+  .selfdate div input {
+    display: inline-block;
+    width: 60%;
+  }
+  .message {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  .message td:nth-child(1) {
+    width: 1%;
+    vertical-align: middle;
+  }
+  .message td:nth-child(2) {
+    width: 2%;
+    vertical-align: middle;
+  }
+  .message td:nth-child(3) {
+    width: 35%;
+    vertical-align: middle;
+  }
+  .message td:nth-child(4) {
+    vertical-align: middle;
+  }
+  .message td:nth-child(5) {
+    width: 15%;
+    vertical-align: middle;
+    text-align: left;
+  }
+  .message td:nth-child(6) {
+    width: 12%;
+    vertical-align: middle;
+  }
+  .message td:nth-child(7) {
+    vertical-align: middle;
+  }
+  #textarea_div {
+    width: 568px;
+  }
+  #textarea_div #example-textarea {
+    width: 100%;
+    max-width: 568px;
+  }
+  

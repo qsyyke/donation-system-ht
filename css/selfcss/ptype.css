@@ -1,0 +1,34 @@
+.ptype-td {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.ptype-td td:nth-child(1) {
+  width: 1%;
+  vertical-align: middle;
+}
+.ptype-td td:nth-child(2) {
+  width: 1%;
+  vertical-align: middle;
+}
+.ptype-td td:nth-child(3) {
+  width: 6%;
+  vertical-align: middle;
+}
+.ptype-td td:nth-child(4) {
+  width: 2%;
+  vertical-align: middle;
+}
+.ptype-td td:nth-child(5) {
+  width: 2%;
+  vertical-align: middle;
+  text-align: left;
+}
+.ptype-td td:nth-child(6) {
+  width: 12%;
+  vertical-align: middle;
+}
+.ptype-td td:nth-child(7) {
+  vertical-align: middle;
+  width: 1%;
+}

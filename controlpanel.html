@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>幸得有你 山河无恙 控制面板</title>
+    <script src="component/js/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="./component/style/components.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/plugins.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="./css/selfcss/control.css">
+    <script src="./js/selfjs/flexible.js"></script>
+    <script src="./js/selfjs/echarts.min.js"></script>
+    <script src="js/selfjs/verifycookie.js"></script>
+    <script src="./js/selfjs/control.js"></script>
+</head>
+
+
+
+<body>
+    <div id="controlpanel">
+        <div class="well head push">
+            <h3>欢迎您 <span></span></h3>
+            <div class="tradediv">
+                <ul>
+                    <li><span>总捐款人数 </span><p class="totalPeople"></p></li>
+                    <li><span>总捐款金额</span><p class="totalMoney"></p></li>
+                </ul>
+            </div>
+        </div>
+
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th width="150">项目名称</th>
+                    <th>说明</th>
+                    <th width="150">项目名称</th>
+                    <th>说明</th>
+                </tr>
+            </thead>
+            <tbody class="setbody">
+                <tr>
+                    <td>订单数量</td>
+                    <td></td>
+                    <td>退款数量</td>
+                    <td></td>
+
+                </tr>
+
+                <tr>
+                    <td>抗疫英雄</td>
+                    <td></td>
+                    <td>评论条数</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>新闻条数</td>
+                    <td></td>
+                    <td>栏目总数</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>图片总数</td>
+                    <td></td>
+                    <td>用户</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    <div class="autopq">
+        <div class="title">
+            <span>自动更新间隔 毫秒单位</span>
+            <input type="number" id="pq" value="600000" class="form-control example-typeahead " placeholder="请输入爬取间隔 ms">
+        </div>
+        <div class="but">
+            <button class="onbut">开&nbsp;&nbsp;&nbsp;&nbsp;启</button>
+            <button class="offbut">关&nbsp;&nbsp;&nbsp;&nbsp;闭</button>
+        </div>
+    </div>
+</body>
+
+</html>

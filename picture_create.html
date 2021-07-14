@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>幸得有你 山河无恙 上传图片</title>
+    <script src="component/js/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="./component/style/components.css">
+    <script src="./component/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/plugins.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/themes.css">
+    <script src="js/selfjs/verifycookie.js"></script>
+    <script src="./js/selfjs/picture_create.js"></script>
+</head>
+
+<body>
+    <div id="body">
+        <ol class="breadcrumb">
+            <li class="active"><a href="#">系统</a></li>
+            <li>创建图片</li>
+        </ol>
+
+
+        <div class="tabli">
+            <span>基本信息</span>
+        </div>
+
+        <div class="tabbody">
+            <form action="javascript:;" name="imgupdate" method="POST" enctype="multipart/form-data">
+                <div class="bodyli active">
+
+                    <div class="inputbox">
+                        <span class="title"><em class="s-red">*</em>图片上传方式</span>
+                        <div class="inputright">
+                            <select id="example-select" name="" class="form-control input-sm">
+                                <option>本地上传</option>
+                                <option>地址添加</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="inputbox">
+                        <span class="title">图片名称</span>
+                        <div class="inputright">
+                            <input type="text" name="img_name" class="form-control input-sm">
+                        </div>
+                    </div>
+
+                    <!-- style="display: none;" -->
+
+                    <div style="display: none;" class="inputbox img_src">
+                        <span class="title">链接</span>
+                        <div class="inputright">
+                            <input type="text" name="img_src" class="form-control input-sm">
+                        </div>
+                    </div>
+
+
+                    <div class="inputbox img_upload">
+                        <span class="title">图片</span>
+                        <div class="inputright">
+                            <label class="btn btn-success btn-sm" for="uploadimg"><i class="fa fa-file-photo-o"></i></label>
+                            <input type="file" name="img" id="uploadimg" style="display: none;">
+                        </div>
+                    </div>
+                </div>
+                <div class="tbfooter">
+                    <button type="submit" class="btn btn-success selfcreate"><i class="fa fa-floppy-o"></i> 创建图片</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+ 
+</body>
+
+</html>

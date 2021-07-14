@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>幸得有你 山河无恙  网站设置</title>
+    <script src="component/js/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="./component/style/components.css">
+    <script src="./component/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/plugins.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/themes.css">
+</head>
+
+<body>
+    <div id="body">
+        <ol class="breadcrumb">
+            <li class="active"><a href="#">系统</a></li>
+            <li>基本设置</li>
+        </ol>
+
+        <div class="tabli">
+            <span class="active">基本信息</span>
+        </div>
+
+        <div class="tabbody">
+            <div class="bodyli active">
+
+                <div class="inputbox">
+                    <span class="title"><em class="s-red">*</em> 网站名称</span>
+                    <div class="inputright">
+                        <input type="text" name="" class="form-control input-sm">
+                    </div>
+                </div>
+
+                <div class="inputbox">
+                    <span class="title">站点LOGO</span>
+                    <div class="inputright">
+                        <input type="text" name="" class="form-control input-sm">
+                        <label class="btn btn-success btn-sm" for="uploadimg"><i class="fa fa-file-photo-o"></i></label>
+                        <input type="file" id="uploadimg" style="display: none;">
+                    </div>
+                </div>
+
+                <div class="inputbox">
+                    <span class="title">标题</span>
+                    <div class="inputright">
+                        <input type="text" name="" class="form-control input-sm">
+                    </div>
+                </div>
+
+                <div class="inputbox">
+                    <span class="title">关键词</span>
+                    <div class="inputright">
+                        <input type="text" name="" class="form-control input-sm">
+                    </div>
+                </div>
+
+                 <div class="inputbox">
+                    <span class="title">描述</span>
+                    <div class="inputright">
+                        <textarea id="example-textarea" name="example-textarea" class="form-control"
+                            rows="3"></textarea>
+                    </div>
+                </div>
+
+                <div class="inputbox">
+                    <span class="title">版权</span>
+                    <div class="inputright">
+                        <input type="text" name="" class="form-control input-sm">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="tbfooter">
+            <button class="btn btn-success"><i class="fa fa-floppy-o"></i> 保存设置</button>
+        </div>
+    </div>
+
+
+    <script src="./component/plugins/tinymce/tinymce.min.js"></script>
+    <script>
+        $('.tabli span').click(function () {
+            $('.tabli span').removeClass('active');
+            $(this).addClass('active').siblings('span').removeClass('active');
+            var id = $(this).index();
+            $('.bodyli').removeClass('active');
+            $('.bodyli').eq(id).addClass('active');
+        })
+        tinymce.init({
+            selector: '#content',
+            language:'zh_CN',
+            menubar: false, //隐藏上面的一个工具栏标题栏
+            branding: false,
+            plugins: 'image code batchUploadImage imagetools link hr table media preview ',
+            toolbar:"undo  redo | removeformat  lineheight  | alignleft  aligncenter alignright alignjustify |  fontselect fontsizeselect | table  media  forecolor backcolor bold italic underline  strikethrough formats | bullist  numlist outdent  indent blockquote | image batchUploadImage imagetools  | code link hr | preview ",
+            height: 550,
+            fontsize_formats: '12px 13px 14px 15px 16px 17px 18px 19px 20px 21px 22px 23px 24px 36px 48px',
+            images_upload_url: '/demo/upimg.php', // 图片上传URL
+            images_upload_base_path: '/demo',     // 存储路径
+            content_style: "img {max-width:100%;}"
+        });
+    </script>
+</body>
+</html>

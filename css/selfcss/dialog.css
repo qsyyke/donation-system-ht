@@ -1,0 +1,7 @@
+.selfdialog {
+    z-index: 99;
+    display: none;
+    position: absolute;
+    left: 30%;
+    top: 5%;
+}
